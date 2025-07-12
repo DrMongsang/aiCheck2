@@ -70,6 +70,31 @@ h2 {
     text-align: center;
     margin-bottom: 64px;
     color: var(--primary-color);
+    line-height: 1.2; /* より引き締まった行間 */
+    letter-spacing: -0.03em; /* より詰まった文字間隔 */
+    max-width: 800px; /* 最大幅を制限して改行をコントロール */
+    margin-left: auto;
+    margin-right: auto;
+    word-break: keep-all; /* 日本語の場合、単語の途中で改行しない */
+    overflow-wrap: break-word; /* 長い単語は適切に改行 */
+}
+
+/* レスポンシブ対応も改善 */
+@media (max-width: 768px) {
+    h2 { 
+        font-size: 2rem;
+        line-height: 1.15; /* モバイルではさらに引き締める */
+        letter-spacing: -0.02em;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 { 
+        font-size: 1.7rem;
+        line-height: 1.1;
+        letter-spacing: -0.015em;
+    }
 }
 
 h3 {
