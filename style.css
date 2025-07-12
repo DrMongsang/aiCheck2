@@ -834,6 +834,88 @@ p {
     }
 }
 
+/* センターフォント用クラス */
+.center-text {
+    text-align: center !important;
+}
+
+.center-button {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+/* レスポンシブ統計表示 */
+.responsive-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.responsive-stats .stat {
+    text-align: center;
+    min-width: 120px;
+}
+
+.responsive-stats .number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    line-height: 1.2;
+}
+
+.responsive-stats .label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 0.5rem;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .responsive-stats {
+        gap: 1rem;
+    }
+    
+    .responsive-stats .stat {
+        min-width: 100px;
+    }
+    
+    .responsive-stats .number {
+        font-size: 2rem;
+    }
+    
+    .responsive-stats .label {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .responsive-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    
+    .responsive-stats .stat {
+        min-width: auto;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .responsive-stats .number {
+        font-size: 2.2rem;
+    }
+    
+    .responsive-stats .label {
+        font-size: 0.9rem;
+    }
+}
+
+/* アイコンテキストのセンター配置 */
 .icon-text {
     display: inline-block;
     width: 60px;
@@ -845,6 +927,24 @@ p {
     justify-content: center;
     font-weight: bold;
     color: #1a1a2e;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
     font-size: 0.9rem;
+}
+
+/* 問題項目のセンター配置 */
+.problem-item {
+    text-align: center;
+}
+
+.problem-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* ステップのセンター配置 */
+.step {
+    text-align: center;
+}
+
+.step h3 {
+    margin-bottom: 0.5rem;
 }
