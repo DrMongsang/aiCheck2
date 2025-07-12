@@ -188,16 +188,16 @@ p {
 /* ボタンスタイル - より目立つように改善 */
 .cta-button, .cta-button-final {
     display: inline-block;
-    background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
-    color: #1a1a1a;
-    padding: 20px 48px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%) !important;
+    color: #1a1a1a !important;
+    padding: 20px 48px !important;
     text-decoration: none;
-    border-radius: 50px;
-    font-weight: 700;
-    font-size: 1.2rem;
-    box-shadow: 0 8px 32px rgba(255, 215, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 3px solid transparent;
+    border-radius: 50px !important;
+    font-weight: 700 !important;
+    font-size: 1.2rem !important;
+    box-shadow: 0 8px 32px rgba(255, 215, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border: 3px solid transparent !important;
     position: relative;
     overflow: hidden;
     text-transform: uppercase;
@@ -223,10 +223,10 @@ p {
 }
 
 .cta-button:hover, .cta-button-final:hover {
-    background: linear-gradient(135deg, #FFE55C 0%, #FFB347 50%, #FF7F50 100%);
-    transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 12px 48px rgba(255, 215, 0, 0.6), 0 8px 24px rgba(0, 0, 0, 0.15);
-    border-color: #FFD700;
+    background: linear-gradient(135deg, #FFE55C 0%, #FFB347 50%, #FF7F50 100%) !important;
+    transform: translateY(-4px) scale(1.05) !important;
+    box-shadow: 0 12px 48px rgba(255, 215, 0, 0.6), 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+    border-color: #FFD700 !important;
 }
 
 .cta-button:active, .cta-button-final:active {
@@ -490,17 +490,17 @@ p {
 
 /* 特別な最終CTAボタン（さらに目立つ） */
 .cta-button-final {
-    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 50%, #FF6B9D 100%);
-    font-size: 1.3rem;
-    padding: 24px 56px;
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 50%, #FF6B9D 100%) !important;
+    font-size: 1.3rem !important;
+    padding: 24px 56px !important;
     min-width: 320px;
     animation: fadeInUp 0.8s ease-out 0.6s both, pulse-final 3s infinite;
 }
 
 .cta-button-final:hover {
-    background: linear-gradient(135deg, #FF8787 0%, #FFA76F 50%, #FF87B9 100%);
-    transform: translateY(-6px) scale(1.08);
-    box-shadow: 0 16px 64px rgba(255, 107, 107, 0.5), 0 8px 32px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #FF8787 0%, #FFA76F 50%, #FF87B9 100%) !important;
+    transform: translateY(-6px) scale(1.08) !important;
+    box-shadow: 0 16px 64px rgba(255, 107, 107, 0.5), 0 8px 32px rgba(0, 0, 0, 0.2) !important;
 }
 
 @keyframes pulse-final {
