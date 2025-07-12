@@ -833,3 +833,18 @@ p {
         order: 2;
     }
 }
+
+.icon-text {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #d4af37, #f4e4a6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
